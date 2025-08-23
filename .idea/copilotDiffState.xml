@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/test/test_HelloWorld.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/test/test_HelloWorld.py" />
+              <option name="updatedContent" value="import unittest&#10;from src.one-function code.HelloWorld import HelloWorld&#10;&#10;class TestHelloWorld(unittest.TestCase):&#10;    def test_greet(self):&#10;        hello = HelloWorld()&#10;        self.assertEqual(hello.greet(), &quot;Hello, World!&quot;)&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    unittest.main()&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/test_ValidEmails.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/test/test_ValidEmails.py" />
+              <option name="updatedContent" value="import unittest&#10;from src.one-function code.ValidEmails import Solution&#10;&#10;class TestValidEmails(unittest.TestCase):&#10;    def test_num_unique_emails(self):&#10;        sol = Solution()&#10;        emails = [&#10;            &quot;test.email+alex@leetcode.com&quot;,&#10;            &quot;test.e.mail+bob.cathy@leetcode.com&quot;,&#10;            &quot;testemail+david@lee.tcode.com&quot;&#10;        ]&#10;        self.assertEqual(sol.numUniqueEmails(emails), 2)&#10;        emails2 = [&#10;            &quot;a@leetcode.com&quot;,&#10;            &quot;b@leetcode.com&quot;,&#10;            &quot;c@leetcode.com&quot;&#10;        ]&#10;        self.assertEqual(sol.numUniqueEmails(emails2), 3)&#10;        emails3 = [&#10;            &quot;a+b@leetcode.com&quot;,&#10;            &quot;a@leetcode.com&quot;&#10;        ]&#10;        self.assertEqual(sol.numUniqueEmails(emails3), 1)&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    unittest.main()&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/test_addTwoNumbers.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/test/test_addTwoNumbers.py" />
+              <option name="updatedContent" value="import unittest&#10;from src.multi-functional code.addTwoNumbers import Solution, createList&#10;&#10;def list_to_pylist(node):&#10;    result = []&#10;    while node:&#10;        result.append(node.val)&#10;        node = node.next&#10;    return result&#10;&#10;class TestAddTwoNumbers(unittest.TestCase):&#10;    def test_add_two_numbers(self):&#10;        sol = Solution()&#10;        l1 = createList([2,4,3])&#10;        l2 = createList([5,6,4])&#10;        result = sol.addTwoNumbers(l1, l2)&#10;        self.assertEqual(list_to_pylist(result), [7,0,8])&#10;&#10;        l1 = createList([0])&#10;        l2 = createList([0])&#10;        result = sol.addTwoNumbers(l1, l2)&#10;        self.assertEqual(list_to_pylist(result), [0])&#10;&#10;        l1 = createList([9,9,9,9,9,9,9])&#10;        l2 = createList([9,9,9,9])&#10;        result = sol.addTwoNumbers(l1, l2)&#10;        self.assertEqual(list_to_pylist(result), [8,9,9,9,0,0,0,1])&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    unittest.main()&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/test_linkedListReversal.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/test/test_linkedListReversal.py" />
+              <option name="updatedContent" value="import unittest&#10;from src.multi-functional code.linkedListReversal import createList, reverseList&#10;&#10;def list_to_pylist(node):&#10;    result = []&#10;    while node:&#10;        result.append(node.val)&#10;        node = node.next&#10;    return result&#10;&#10;class TestLinkedListReversal(unittest.TestCase):&#10;    def test_reverse_list(self):&#10;        head = createList([1,2,3,4,5])&#10;        reversed_head = reverseList(head)&#10;        self.assertEqual(list_to_pylist(reversed_head), [5,4,3,2,1])&#10;&#10;        head = createList([])&#10;        reversed_head = reverseList(head)&#10;        self.assertEqual(list_to_pylist(reversed_head), [])&#10;&#10;        head = createList([42])&#10;        reversed_head = reverseList(head)&#10;        self.assertEqual(list_to_pylist(reversed_head), [42])&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    unittest.main()&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
